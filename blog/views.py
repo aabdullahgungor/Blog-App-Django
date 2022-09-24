@@ -1,14 +1,13 @@
 from django.http.response import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render 
 
-# Create your views here.
-# The methods will correspond to the urls.
-# We wrote "request" because each method meets the Http Request request from the user.
 def index(request):
-    return HttpResponse("Home Page")
+    return render(request, "blog/index.html")
 
 def blogs(request):
-    return HttpResponse("Blogs")
+    return render(request, "blog/blogs.html")
 
 def blog_details(request, id):
-    return HttpResponse("Blog Details: " + str(id))
+    return render(request, "blog/blog_details.html",{
+        "id": id
+    })

@@ -25,5 +25,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')), #What does include mean? In the project, we define the url scheme coming from a separate application to the main application.
+    path('', include('blog.urls')), 
 ]
