@@ -30,7 +30,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-INSTALLED_APPS = [
+INSTALLED_APPS = [ # Oluşturduğumuz yeni uygulamaları tanıtalım.
+    'blog', #blog uygulamasını tanıttık. Bu sayede projemiz sonradan eklenen bu uygulamayı tanır.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
