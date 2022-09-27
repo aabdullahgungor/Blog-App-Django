@@ -11,89 +11,9 @@
     <title>{% block title %} {%endblock%} | Blogapp</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-primary navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="">BlogApp</a>
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Blogs</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div class="container mt-3">
-      <div class="row">
-        <div class="col-3">
-          <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="">Programlama</a>
-            <a class="list-group-item list-group-item-action" href="">Web Programlama</a>
-            <a class="list-group-item list-group-item-action" href="">Mobil Uygulama</a>
-          </div>
-        </div>
-        <div class="col-9">
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-3">
-                <img class="img-fluid" src="{% static 'img/1.jpg' %}" alt="">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Komple Web Geliştirme Kursu</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quidem!</p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-3">
-                <img class="img-fluid" src="{% static 'img/2.jpg' %}" alt="">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Komple Web Geliştirme Kursu</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quidem!</p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-3">
-                <img class="img-fluid" src="{% static 'img/3.jpg' %}" alt="">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Komple Web Geliştirme Kursu</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quidem!</p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3">
-            <div class="row">
-              <div class="col-md-3">
-                <img class="img-fluid" src="{% static 'img/4.jpg' %}" alt="">
-              </div>
-              <div class="col-md-9">
-                <div class="card-body">
-                  <h5 class="card-title">Komple Web Geliştirme Kursu</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quidem!</p>
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    
+    {%include 'partials/_navbar.html'%}
+  
     {% block content %}{% endblock %}
 
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
